@@ -7,11 +7,13 @@
 a {
     text-decoration: none;
 }
-/* clearfixを追加 */
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
+}
+header, nav, h2, .main-visual, footer {
+	font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
 header {
 	position: relative;
@@ -20,7 +22,6 @@ header {
     margin: 0 auto;
     text-align: center;
 }
-/* headerタグ内のheadlineクラスにのみ反映される */
 header .headline {
     font-size: 32px;
 }
@@ -44,36 +45,35 @@ header .headline {
     margin: 0 20px;
 }
 .main-visual {
-    width: 100%; /* 横幅 */
-    height: 300px; /* 高さ */
+    width: 100%;
+    height: 300px;
     background-image: url(img/mv.jpg);
     background-size: cover;
     background-position: center;
 }
 .main-visual-content {
-    width: 40%; /* 横幅を指定 */
-    height: 300px; /* 親の高さに揃える */
-    background-color: rgba( 0, 0, 0, 0.5); /* 背景色を半透明の黒にする */
-    text-align: center; /* 文字を中央揃えにする */
-    padding-top: 105px; /* 上側の内側余白で垂直方向の位置を調整 */　　
-   /* 背景色 */
+    width: 40%;
+    height: 300px;
+    background-color: rgba( 0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 105px;　　
 }
 .main-visual-text {
-    color: #fff; /* 文字色を白に変更 */
+    color: #fff;
 }
 .main-visual-name {
-    margin-top: 30px; /* 上側の外側の余白 */
-    color: #fff; /* 文字色を白に変更 */
+    margin-top: 30px;
+    color: #fff;
 }
 main {
     width: 800px;
-    margin: 0 auto; /* 領域を中央揃え */
-    padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
+    margin: 0 auto;
+    padding: 70px 0;
 }
 .blog {
     width: 540px;
     float: left;
-    margin-right: 30px; /* 領域の右側余白 */
+    margin-right: 30px;
 }
 .blog-headline {
     border-bottom: 8px solid #f7f7f7;
@@ -165,12 +165,10 @@ main {
 .instagram-box:nth-child(6) {
     background-image: url(img/road.jpg);
 }
-
 .pagenation {
 	text-align: center;
 	padding-top: 50px;
 }
-
 .pagenation p {
 	display:inline-block;
 	text-align:center;
@@ -181,17 +179,7 @@ main {
 	background-color: #acabab;
 	border-radius: 3px;
 	line-height: 30px;
-
-
-
-
-
 }
-
-
-
-
-
 footer {
     width: 100%;
     height: 120px;
